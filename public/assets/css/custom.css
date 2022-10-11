@@ -1,0 +1,236 @@
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.static {
+    position: static;
+}
+
+.cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.owl-carousel .owl-slide {
+    position: relative;
+    height: 100vh;
+    background-color: lightgray;
+
+}
+
+.owl-carousel .owl-slide-animated {
+    transform: translateX(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.05s;
+}
+
+.owl-carousel .owl-slide-animated.is-transitioned {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.owl-carousel .owl-slide-title.is-transitioned {
+    transition-delay: 0.2s;
+}
+
+.owl-carousel .owl-slide-subtitle.is-transitioned {
+    transition-delay: 0.35s;
+}
+
+.owl-carousel .owl-slide-cta.is-transitioned {
+    transition-delay: 0.5s;
+}
+
+.owl-carousel .owl-dots,
+.owl-carousel .owl-nav {
+    position: absolute;
+}
+
+.owl-carousel .owl-dots .owl-dot,
+.owl-carousel .owl-nav [class*="owl-"]:focus {
+    outline: none;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+    background: transparent;
+    border: 1px solid var(--main-black-color);
+    transition: all 0.2s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span,
+.owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--main-black-color);
+}
+
+.owl-carousel .owl-nav {
+    left: 15%;
+    top: 85%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.owl-carousel .owl-nav svg {
+    opacity: 0.6;
+    transition: opacity 0.6s;
+}
+
+.owl-carousel .owl-nav button:hover svg {
+    opacity: 1;
+}
+
+.owl-carousel .owl-nav [class*="owl-"]:hover {
+    background: transparent;
+}
+
+section {
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+    .owl-carousel .owl-nav {
+        top: 5%;
+    }
+
+    .owl-carousel .owl-nav svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+/* .rounded-circle{
+    height:100px;
+    background-color:#fff;
+    border-radius: 90%;
+    width: 190px;
+} */
+
+
+/* login page */
+#login-logo{
+    padding: .75rem 1.25rem;
+    background-color:#fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#login-header{
+    background-color:#fca24e !important;
+    height: 90px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#login_pg{
+    /* background-color:#fff2e7; */
+    background-image: url('/assets/images/hero/dct.jpeg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-width: 100%;
+}
+
+#logo-font{
+    color: #0a548d;
+
+}
+
+#card_body{
+    border-radius: 10px;
+}
+
+
+/* dashboard */
+#logo_header{
+    height: 41px !important;
+    width: 200px !important;
+    background-color:#ffffff;
+    border-radius: 4px;
+}
+
+div.panel-header{
+    height: 120px;
+    background-color:#ffffff !important;
+}
+
+/*
+div.d-flex{
+    background-color:#ffffff;
+} */
+
+.page-inner{
+    padding: 5px;
+}
+
+#register-header{
+    background-color:#fca24e !important;
+    height: 90px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#register-logo{
+    padding: .75rem 1.25rem;
+    background-color:#fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+th{
+    font-family: 'Tahoma';
+}
+
+
+#th{
+    background-color: #0037c4;
+    color: #ebedff;
+}
+
+#table{
+    background-color: #ebedff;
+}
+
+.tox-notification {display: none !important;}
+/*
+.btn-warning {
+    color: #f7f9fd !important;
+    background-color: #0037c4 !important;
+    border-color: #f88f20 !important;
+}
+
+.btn-danger {
+    color: #f7f9fd !important;
+    background-color: #EB5B1B  !important;
+    border-color: #2713e2 !important;
+}
+
+.btn-warning:hover
+{
+
+    background-color:#0466c8 !important;
+}
+
+.btn-danger:hover
+{
+
+    background-color:#f10f0f !important;
+} */
+.sidebar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent !important;
+}
+
+.sidebar-wrapper{
+    overflow-y:hidden;
+}
